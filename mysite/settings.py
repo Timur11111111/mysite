@@ -11,6 +11,7 @@ https://docs.djangoproject.com/en/4.2/ref/settings/
 """
 import os
 from pathlib import Path
+from ...mail_code import mysite_back
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -142,6 +143,6 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_HOST_USER = 'timur3373586@gmail.com'
-EMAIL_HOST_PASSWORD = 'jmat hywz xrsr gpck '
+EMAIL_HOST_PASSWORD = mysite_back
 EMAIL_PORT = 587
 EMAIL_USE_TLS = True
