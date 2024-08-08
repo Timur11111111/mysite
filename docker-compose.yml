@@ -15,7 +15,7 @@ services:
     environment:
       - DATABASE_HOST=db
       - DATABASE_NAME=database
-      - DATABASE_USER=imowww
+      - DATABASE_USER=root
       - DATABASE_PASSWORD=123123123
 
   db:
@@ -24,7 +24,7 @@ services:
     restart: always
     environment:
       POSTGRES_DB: database
-      POSTGRES_USER: imowww
+      POSTGRES_USER: root
       POSTGRES_PASSWORD: 123123123
     volumes:
       - postgres_data:/var/lib/postgresql/data/
